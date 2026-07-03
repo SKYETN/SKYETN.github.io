@@ -1,0 +1,474 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Shiqin Tong</title>
+
+    <meta name="author" content="Shiqin Tong">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+
+          <!-- =================== HEADER: name, bio, links, photo =================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Shiqin Tong
+                </p>
+                <p>
+                  I'm spending a gap year at the
+                  <a href="https://iiis.tsinghua.edu.cn/en/">Institute for Interdisciplinary Information Sciences (IIIS)</a>,
+                  Tsinghua University, advised by Prof. <a href="https://www.mengdixu.me/">Mengdi Xu</a>, where I work on
+                  <strong>memory mechanisms for embodied agents</strong>, especially spatial memory and its update
+                  mechanisms in robots. More broadly, I'm curious about how such memory modules relate to in-context
+                  learning in foundation models.
+                </p>
+                <p>
+                  Before that, I earned an M.S. in Health Informatics from Cornell University, advised by
+                  Prof. <a href="https://sites.google.com/site/tapomayukh">Tapomayukh Bhattacharjee</a> and
+                  Prof. <a href="https://www.linkedin.com/in/josefflo/">Jose Florez-Arango</a>; an M.S. in Artificial
+                  Intelligence from the National University of Singapore; and a B.S. in Software Engineering from
+                  Dalian University of Technology, advised by
+                  Prof. <a href="https://scholar.google.com/citations?user=Z0dStKsAAAAJ&amp;hl=en">Xiangjie Kong</a> and
+                  Prof. <a href="https://scholar.google.com/citations?user=HDFA2VYAAAAJ&amp;hl=en">Feng Xia</a>.
+                </p>
+                <p>
+                  I like observing real user needs in tightly regulated settings and building improvements for
+                  them, be it products, algorithms, or systems. That drew me to Weill
+                  Cornell Medicine and to West China Hospital, where I was advised by
+                  Prof. <a href="https://wangchongyang.ai/">Chongyang Wang</a>.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:shiqin.tong@outlook.com">Email</a> &nbsp;/&nbsp;
+                  <!-- CV hidden until the PDF is ready: <a href="data/CV.pdf">CV</a> &nbsp;/&nbsp; -->
+                  <a href="https://www.linkedin.com/in/skye-tong/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/skyetn">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <img style="width:100%;max-width:100%;aspect-ratio:1/1;object-fit:cover;object-position:60% 32%;border-radius:50%;"
+                     alt="Shiqin Tong" src="images/profile.png?v=3">
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- =================== RESEARCH INTRO =================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  My work spans memory for long-horizon embodied agents, assistive robotics, and AI for healthcare (Neurotech).
+                  Papers under review are shaded blue; those marked <span style="color:#1772d0;font-weight:700;">*</span> are Neurotech.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- =================== PUBLICATIONS (tabbed filter) =================== -->
+          <div class="pubtabs"
+            ><a href="#" id="flt-all" class="pubtab active" onclick="filterPubs('all');return false;">All</a
+            ><a href="#" id="flt-robotics" class="pubtab" onclick="filterPubs('robotics');return false;">Robotics</a
+            ><a href="#" id="flt-cogsci" class="pubtab" onclick="filterPubs('cogsci');return false;">Neurotech</a
+          ></div>
+          <div class="pubframe">
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <!-- flagship, in preparation. Uncomment when the title/links are final:
+            <tr class="pub" data-line="robotics">
+              <td colspan="2" style="padding:12px 16px;width:100%;vertical-align:middle">
+                <span class="papertitle">Active Memory Compression for Long-Horizon Robot Manipulation</span>
+                <span style="color:#888;">(working title)</span>
+                <br>
+                <strong>Shiqin Tong</strong>, et al.
+                <br>
+                <em>In preparation</em>, 2026
+                <p style="margin:6px 0 0;">
+                  A universal, counterintuitive signal separates memory tasks under a training-free Fourier + RAG
+                  feature mapping; steering it lifts a 14B model to state of the art on RoboMME. The full paper turns
+                  this signal into an end-to-end training objective and a compact, fixed-capacity parametric memory that
+                  stays accurate over ~900-step tasks, robust to visual occlusion, alongside a harder long-horizon
+                  robot benchmark.
+                </p>
+              </td>
+            </tr>
+            -->
+
+            <!-- ==== toggle to show which research line each paper belongs to ==== -->
+
+            <!-- ---- under review (newest first) ---- -->
+            <tr bgcolor="#e2ecfb" class="pub" data-line="robotics">
+              <td colspan="2" style="padding:12px 16px;width:100%;vertical-align:middle">
+                <span class="papertitle">Dex-X: Learning Visual-Tactile Dexterous Manipulation From Human Demonstration with Simulated Interaction</span>
+                <br>
+                <em>Under review</em>, May 2026
+                <p style="margin:6px 0 0;">
+                  Learning dexterous manipulation that fuses vision and touch directly from human demonstrations.
+                </p>
+              </td>
+            </tr>
+
+            <tr bgcolor="#e2ecfb" class="pub" data-line="cogsci">
+              <td colspan="2" style="padding:12px 16px;width:100%;vertical-align:middle">
+                <span style="color:#1772d0;font-weight:700;">*</span> <span style="color:#777;">(Neurotech)</span> <span class="papertitle">ReTell: LLM-Powered Task-based Learning for Neuro-Inclusive Education of Children with ADHD</span>
+                <br>
+                <em>Under review</em>, January 2026
+                <p style="margin:6px 0 0;">
+                  A task-based learning system designed for neuro-inclusive education of children with ADHD.
+                </p>
+              </td>
+            </tr>
+
+            <tr bgcolor="#e2ecfb" class="pub" data-line="cogsci">
+              <td colspan="2" style="padding:12px 16px;width:100%;vertical-align:middle">
+                <span style="color:#1772d0;font-weight:700;">*</span> <span style="color:#777;">(Neurotech)</span> <span class="papertitle">Social Determinants of Health and Telehealth Utilization for ADHD: A Cross-Sectional Study</span>
+                <br>
+                <em>Under review</em>, January 2026 &nbsp;&middot;&nbsp; AMIA 2025 Workshop
+                <p style="margin:6px 0 0;">
+                  A cross-sectional study of how social determinants of health shape telehealth utilization for ADHD care.
+                </p>
+              </td>
+            </tr>
+
+            <!-- ---- RSS 2026 ---- -->
+            <tr class="pub" data-line="robotics">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/fig_knowing.png" alt="Knowing When Not to Help" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="#"><span class="papertitle">Knowing When Not to Help: Active Estimation of Human Reachability for Just-Right Robot Assistance</span></a>
+                <br>
+                Ziang Liu, Yunting Yan, Christy Sum Yu Cheung, Tailai Ying, Bodong Liu,
+                <strong>Shiqin Tong</strong>, Alexander Orkwis, Katherine Dimitropoulou,
+                Tapomayukh Bhattacharjee
+                <br>
+                <em>Robotics: Science and Systems (RSS)</em>, 2026
+                <p></p>
+                <p>
+                  A robot actively estimates what a person can and cannot reach, so it steps in only when help is
+                  actually needed, and holds back when it isn't.
+                </p>
+              </td>
+            </tr>
+
+            <!-- ---- RSS 2025 Best Paper ---- -->
+            <tr class="pub" data-line="robotics">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/fig_feast.png" alt="FEAST mealtime-assistance system" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://emprise.cs.cornell.edu/feast/"><span class="papertitle">FEAST: A Flexible Mealtime-Assistance System Towards In-the-Wild Personalization</span></a>
+                &nbsp;<span style="color:#b8860b;font-weight:700;">(Best Paper Award)</span>
+                <br>
+                Rajat Kumar Jenamani, Tom Silver, Ben Dodson, <strong>Shiqin Tong</strong>, Anthony Song, Yuting Yang,
+                Ziang Liu, Benjamin Howe, Aimee Whitneck,
+                Tapomayukh Bhattacharjee
+                <br>
+                <em>Robotics: Science and Systems (RSS)</em>, 2025
+                <br>
+                <a href="https://emprise.cs.cornell.edu/feast/">project page</a> /
+                <a href="https://arxiv.org/abs/2506.14968">arXiv</a> /
+                <a href="https://www.roboticsproceedings.org/rss21/p083.html">proceedings</a>
+                <p></p>
+                <p>
+                  A modular mealtime-assistance robot that care recipients personalize in-the-wild, using
+                  LLM-adapted behavior trees for safe, transparent, and adaptable feeding, drinking, and mouth-wiping.
+                </p>
+              </td>
+            </tr>
+
+            <!-- ---- IEEE TII 2020 ---- -->
+            <tr class="pub" data-line="other">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/fig_tii.png" alt="Mobile Edge Cooperation framework" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://www.researchgate.net/publication/343620762"><span class="papertitle">Mobile Edge Cooperation Optimization for Wearable Internet of Things: A Network Representation-Based Framework</span></a>
+                <br>
+                Xiangjie Kong, <strong>Shiqin Tong</strong>, Hui Gao, Guojiang Shen, Kaoru Wang, Mario Collotta, Ilsun You, Sajal K. Das
+                <br>
+                <em>IEEE Transactions on Industrial Informatics (TII)</em>, 2020
+                <p></p>
+                <p>
+                  A network-representation framework for optimizing mobile-edge cooperation in wearable IoT. (67 citations)
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+          </div>
+
+          <div style="height:34px;"></div>
+
+          <!-- =================== EXPERIENCE =================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr><td style="padding:16px;width:100%;vertical-align:middle">
+              <h2>Industry</h2>
+              <p>
+                My industry work spans CT imaging engines, LLM API and MCP orchestration, and Kubernetes clusters.
+                When teammates were swamped, I also helped out with front-end, back-end, mobile 😂
+              </p>
+            </td></tr>
+          </tbody></table>
+          <div class="pubtabs"
+            ><a href="#" id="eflt-all" class="pubtab exptab active" onclick="filterExp('all');return false;">All</a
+            ><a href="#" id="eflt-fulltime" class="pubtab exptab" onclick="filterExp('fulltime');return false;">Full-time</a
+            ><a href="#" id="eflt-intern" class="pubtab exptab" onclick="filterExp('intern');return false;">Intern</a
+            ><a href="#" id="eflt-cert" class="pubtab exptab" onclick="filterExp('cert');return false;">Non-technical Certifications</a
+          ></div>
+          <div class="pubframe">
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr class="exp" data-line="fulltime">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <a href="https://eu.united-imaging.com/en/news-center/knowledge-base"><img src="images/logo_uih.png" alt="United Imaging Healthcare" style="width:64px;height:64px;border-radius:8px;object-fit:contain;background:#fff;border:1px solid #e5e5e5;"></a>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Software Algorithm Engineer</span> <span style="color:#888;">&middot; Full-Stack</span>
+                &nbsp;&middot;&nbsp; <span style="color:#555;">Mentor: Zheng Zhou</span>
+                <br>
+                <em><a href="https://eu.united-imaging.com/en/news-center/knowledge-base">United Imaging Healthcare</a></em>, 2024&ndash;2025
+                <p></p>
+                <p>CT imaging engine and distributed LLM inference for high-concurrency serving.</p>
+              </td>
+            </tr>
+
+            <tr class="exp" data-line="intern">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <a href="https://www.nyp.org/"><img src="images/logo_nyp.png" alt="NewYork-Presbyterian Hospital" style="width:64px;height:64px;border-radius:8px;object-fit:contain;background:#fff;border:1px solid #e5e5e5;"></a>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Software Algorithm Engineer (Intern)</span> <span style="color:#888;">&middot; Full-Stack</span>
+                <br>
+                <em><a href="https://www.nyp.org/">NewYork-Presbyterian Hospital</a></em>, 2023&ndash;2024
+                <p></p>
+                <p>Medical dialogue agents and real-time event-stream scheduling.</p>
+              </td>
+            </tr>
+
+            <tr class="exp" data-line="intern">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <a href="https://careers.a-star.edu.sg/"><img src="images/logo_astar.png" alt="A*STAR" style="width:64px;height:64px;border-radius:8px;object-fit:contain;background:#fff;border:1px solid #e5e5e5;"></a>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Algorithm Engineer (Intern)</span>
+                &nbsp;&middot;&nbsp; <span style="color:#555;">Mentor: <a href="https://research.a-star.edu.sg/blogger/lux-anantharaman/">Lux Anantharaman</a></span>
+                <br>
+                <em><a href="https://careers.a-star.edu.sg/">A*STAR, Singapore</a></em>, 2021&ndash;2023
+                <p></p>
+                <p>Ray-based parallel inference pipeline and diffusion-based anomaly detection.</p>
+              </td>
+            </tr>
+
+            <!-- ---- certifications ---- -->
+            <tr class="exp" data-line="cert" data-inall="no">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/cert_npdp.png" alt="NPDP" style="width:64px;height:64px;border-radius:8px;object-fit:contain;background:#fff;border:1px solid #e5e5e5;">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">NPDP (New Product Development Professional)</span>
+                <br>
+                <em>PDMA</em>, 2025 <span style="color:#888;">&middot; product &amp; management</span>
+              </td>
+            </tr>
+
+            <tr class="exp" data-line="cert" data-inall="no">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/cert_togaf.png" alt="TOGAF" style="width:64px;height:64px;border-radius:8px;object-fit:contain;background:#fff;border:1px solid #e5e5e5;">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">TOGAF 9 Foundation / Certified</span>
+                <br>
+                <em>The Open Group</em>, 2022 (Singapore) <span style="color:#888;">&middot; enterprise architecture &amp; agile</span>
+              </td>
+            </tr>
+
+            <tr class="exp" data-line="cert" data-inall="no">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/cert_tableau.png" alt="Tableau" style="width:64px;height:64px;border-radius:8px;object-fit:contain;background:#fff;border:1px solid #e5e5e5;">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Tableau Desktop Specialist</span>
+                <br>
+                <em>Tableau</em>, 2022
+              </td>
+            </tr>
+
+            <tr class="exp" data-line="cert" data-inall="no">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/cert_n2.svg" alt="JLPT N2" style="width:64px;height:64px;border-radius:8px;object-fit:contain;background:#fff;border:1px solid #e5e5e5;">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">JLPT N2</span>
+                <br>
+                <em>Japanese Language Proficiency</em>, 2020 (Dalian)
+              </td>
+            </tr>
+
+          </tbody></table>
+          </div>
+
+          <div style="height:34px;"></div>
+
+          <!-- =================== BEYOND THE CV =================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr><td style="padding:16px;width:100%;vertical-align:middle">
+              <h2>Beyond the CV</h2>
+              <p>
+                Books I read, the agent-powered note systems I've built, and side projects that speed up my
+                research. <span class="highlight">Most of all, I'm grateful to every PhD student who has mentored me: more than the
+                papers, it's these everyday habits that they really taught me.</span>
+              </p>
+            </td></tr>
+          </tbody></table>
+          <div class="pubtabs"
+            ><a href="#" id="rflt-all" class="pubtab readtab" onclick="filterRead('all');return false;">All</a
+            ><a href="#" id="rflt-reading" class="pubtab readtab" onclick="filterRead('reading');return false;">Reading</a
+            ><a href="#" id="rflt-workflow" class="pubtab readtab active" onclick="filterRead('workflow');return false;">Note systems</a
+            ><a href="#" id="rflt-projects" class="pubtab readtab" onclick="filterRead('projects');return false;">Projects</a
+          ></div>
+          <div class="pubframe">
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <!-- ---- reading: a data snapshot rather than a book list ---- -->
+            <tr class="read" data-line="reading">
+              <td colspan="2" style="padding:2px 16px 8px;width:100%;vertical-align:middle">
+                <p style="margin:0 0 8px;">
+                  Roughly <strong>4,956 notes</strong> (as of January 2026) and <strong>50k+ words</strong> across <strong>140+ books</strong>,
+                  mostly read over holidays, spanning systems thinking, cognitive science, and philosophy. The ones I annotated most:
+                </p>
+                <table style="width:100%;max-width:580px;border-spacing:0 8px;border-collapse:separate;margin-top:2px;">
+                  <tr>
+                    <td style="width:240px;white-space:nowrap;padding-right:14px;vertical-align:middle;"><strong>Sensemaking</strong> <span style="color:#888;font-size:13px;">Madsbjerg</span></td>
+                    <td style="vertical-align:middle;"><span style="display:block;background:#eef0f2;border-radius:6px;"><span style="display:block;height:12px;width:100%;background:#1772d0;border-radius:6px;"></span></span></td>
+                    <td style="width:1%;text-align:right;color:#555;white-space:nowrap;padding-left:12px;vertical-align:middle;">53</td>
+                  </tr>
+                  <tr>
+                    <td style="white-space:nowrap;padding-right:14px;vertical-align:middle;"><strong>The 7 Habits</strong> <span style="color:#888;font-size:13px;">Covey</span></td>
+                    <td style="vertical-align:middle;"><span style="display:block;background:#eef0f2;border-radius:6px;"><span style="display:block;height:12px;width:66%;background:#1772d0;border-radius:6px;"></span></span></td>
+                    <td style="text-align:right;color:#555;white-space:nowrap;padding-left:12px;vertical-align:middle;">35</td>
+                  </tr>
+                  <tr>
+                    <td style="white-space:nowrap;padding-right:14px;vertical-align:middle;"><strong>Intuition</strong> <span style="color:#888;font-size:13px;">Myers</span></td>
+                    <td style="vertical-align:middle;"><span style="display:block;background:#eef0f2;border-radius:6px;"><span style="display:block;height:12px;width:64%;background:#1772d0;border-radius:6px;"></span></span></td>
+                    <td style="text-align:right;color:#555;white-space:nowrap;padding-left:12px;vertical-align:middle;">34</td>
+                  </tr>
+                  <tr>
+                    <td style="white-space:nowrap;padding-right:14px;vertical-align:middle;"><strong>Finite &amp; Infinite Games</strong> <span style="color:#888;font-size:13px;">Carse</span></td>
+                    <td style="vertical-align:middle;"><span style="display:block;background:#eef0f2;border-radius:6px;"><span style="display:block;height:12px;width:60%;background:#1772d0;border-radius:6px;"></span></span></td>
+                    <td style="text-align:right;color:#555;white-space:nowrap;padding-left:12px;vertical-align:middle;">32</td>
+                  </tr>
+                  <tr>
+                    <td style="white-space:nowrap;padding-right:14px;vertical-align:middle;"><strong>Thinking in Systems</strong> <span style="color:#888;font-size:13px;">Meadows</span></td>
+                    <td style="vertical-align:middle;"><span style="display:block;background:#eef0f2;border-radius:6px;"><span style="display:block;height:12px;width:58%;background:#1772d0;border-radius:6px;"></span></span></td>
+                    <td style="text-align:right;color:#555;white-space:nowrap;padding-left:12px;vertical-align:middle;">31</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ---- workflow ---- -->
+            <tr class="read" data-line="workflow">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/obsidian_graph.png" alt="My Obsidian knowledge graph" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Obsidian knowledge graph (collection)</span>
+                <br>
+                <em>personal wiki</em>
+                <p></p>
+                <p>A vault of atomic Zettelkasten notes linked into a graph I actually think in: every idea is one card, wired to its neighbors.</p>
+              </td>
+            </tr>
+
+            <tr class="read" data-line="workflow">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/n8n_graph.png" alt="n8n paper graph" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Self-growing note tree (integrate and discover)</span>
+                &nbsp;&middot;&nbsp; <span style="color:#555;">built on <a href="https://n8n.io/">n8n</a></span>
+                <br>
+                <em>automation</em>
+                <p></p>
+                <p>An n8n pipeline that grows the vault on its own and scores how important each note is. A write-up about it drew 400+ comments.</p>
+              </td>
+            </tr>
+
+            <!-- ---- projects (TODO: fill in / swap placeholders for real renders & plots) ---- -->
+            <tr class="read" data-line="projects">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/blender_scene.png" alt="Blender scene imported into a simulator" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Blender2sim Loader</span>
+                <br>
+                <em>3D &middot; side project</em>
+                <p></p>
+                <p>A loader that pulls scenes from Blender into simulators and composes them on the fly, one-click generating whatever scene I need, with agents assembling the pieces.</p>
+              </td>
+            </tr>
+
+            <tr class="read" data-line="projects">
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                <a href="data/caregivers-poster.pdf"><img src="images/spss_poster.png" alt="Caregivers dataset poster" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;"></a>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Statistics</span> &nbsp;&middot;&nbsp; <em>SPSS</em>
+                <br>
+                <a href="data/caregivers-poster.pdf">poster (PDF)</a>
+                <p style="margin:6px 0 0;">Working with pure mathematicians, I found that when an LLM has no obvious signal to follow, the people with real insight can quickly point me to the one we should supervise.</p>
+              </td>
+            </tr>
+
+          </tbody></table>
+          </div>
+
+          <!-- =================== FOOTER =================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Template based on <a href="https://github.com/jonbarron/website">Jon Barron</a>'s website.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+        </td>
+      </tr>
+    </table>
+
+    <script type="text/javascript">
+      function filterRows(line, rowSel, tabSel, btnPrefix) {
+        var rows = document.querySelectorAll(rowSel);
+        for (var i = 0; i < rows.length; i++) {
+          var show = (line === 'all')
+            ? (rows[i].getAttribute('data-inall') !== 'no')
+            : (rows[i].getAttribute('data-line') === line);
+          rows[i].style.display = show ? '' : 'none';
+        }
+        var tabs = document.querySelectorAll(tabSel);
+        for (var j = 0; j < tabs.length; j++) { tabs[j].classList.remove('active'); }
+        var active = document.getElementById(btnPrefix + line);
+        if (active) { active.classList.add('active'); }
+      }
+      function filterPubs(line) { filterRows(line, 'tr.pub', '.pubtab:not(.exptab):not(.readtab)', 'flt-'); }
+      function filterExp(line)  { filterRows(line, 'tr.exp', '.exptab', 'eflt-'); }
+      function filterRead(line) { filterRows(line, 'tr.read', '.readtab', 'rflt-'); }
+
+      // default tab states on first load: Research=All, Industry=All (certs hidden), Beyond=Workflow
+      filterExp('all');
+      filterRead('workflow');
+    </script>
+  </body>
+</html>
