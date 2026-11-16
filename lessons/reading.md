@@ -3,15 +3,91 @@ layout: lesson
 title: Reading
 ---
 
+<style>
+.tiles{display:flex;flex-wrap:wrap;gap:12px;margin:8px 0 24px}
+.tile{flex:1 1 140px;border:1px solid #e5e5e5;border-radius:8px;padding:12px 14px}
+.tile .v{font-size:26px;font-weight:700;color:#1772d0;line-height:1.1}
+.tile .k{color:#555;font-size:14px;margin-top:4px}
+table.bars{width:100%;border-collapse:separate;border-spacing:0 6px;margin:4px 0 24px}
+table.bars td{vertical-align:middle;padding:0}
+table.bars .lbl{width:38%;padding-right:12px;font-size:14px;line-height:1.3}
+table.bars .cn{color:#888;font-size:12px}
+table.bars .bar{width:44%}
+table.bars .track{display:block;background:#eef0f2;border-radius:6px}
+table.bars .fill{display:block;height:12px;border-radius:6px}
+table.bars .num{width:8%;text-align:right;padding-left:10px;color:#333;font-size:14px;white-space:nowrap}
+table.bars .sub{width:10%;text-align:right;padding-left:10px;color:#888;font-size:12px;white-space:nowrap}
+.quote{border-left:3px solid #1772d0;padding:2px 0 2px 14px;margin:0 0 18px}
+.quote .src{color:#888;font-size:13px;margin-top:4px}
+@media (max-width:560px){table.bars .sub{display:none}table.bars .lbl{width:48%}}
+</style>
 
-Roughly **4,956 notes** and **50k+ words** across **140+ books**, mostly read over holidays, spanning systems thinking, cognitive science, and philosophy.
+<h2>读书 · Reading</h2>
+<p class="date">Notes from the Dedao (得到) app, as of 2026</p>
 
-**The ones I annotated most**
+<p>这些年我读书时随手划线、写笔记。下面是这些笔记的统计，和一些我常回去看的句子。<br>
+<span class="en">Over the years I highlighted and took notes as I read. Below are the numbers, and some lines I keep coming back to.</span></p>
 
-| Book | Author | Notes |
-|:---|:---|:---|
-| Sensemaking | Madsbjerg | 53 |
-| The 7 Habits | Covey | 35 |
-| Intuition | Myers | 34 |
-| Finite & Infinite Games | Carse | 32 |
-| Thinking in Systems | Meadows | 31 |
+<div class="tiles">
+<div class="tile"><div class="v">118</div><div class="k">books &amp; courses<br><span class="cn">本书和课程</span></div></div>
+<div class="tile"><div class="v">4,956</div><div class="k">notes<br><span class="cn">条笔记</span></div></div>
+<div class="tile"><div class="v">8</div><div class="k">fields<br><span class="cn">个领域</span></div></div>
+<div class="tile"><div class="v">42</div><div class="k">notes per book on average<br><span class="cn">平均每本笔记数</span></div></div>
+</div>
+
+<h3>按领域 · By field</h3>
+<p class="date">Notes per field. Right: number of books.</p>
+<table class="bars">
+<tr><td class="lbl">Finance &amp; Startups<br><span class="cn">金融与创业</span></td><td class="bar"><span class="track"><span class="fill" style="width:100%;background:#1772d0"></span></span></td><td class="num">2,155</td><td class="sub">33 books</td></tr>
+<tr><td class="lbl">Self-Management<br><span class="cn">自我管理</span></td><td class="bar"><span class="track"><span class="fill" style="width:49%;background:#1772d0"></span></span></td><td class="num">1,063</td><td class="sub">33 books</td></tr>
+<tr><td class="lbl">Math &amp; Complex Systems<br><span class="cn">数学与复杂系统</span></td><td class="bar"><span class="track"><span class="fill" style="width:22%;background:#1772d0"></span></span></td><td class="num">467</td><td class="sub">11 books</td></tr>
+<tr><td class="lbl">Communication &amp; Influence<br><span class="cn">沟通与影响力</span></td><td class="bar"><span class="track"><span class="fill" style="width:18%;background:#1772d0"></span></span></td><td class="num">389</td><td class="sub">8 books</td></tr>
+<tr><td class="lbl">Computing &amp; Engineering<br><span class="cn">计算机与工程</span></td><td class="bar"><span class="track"><span class="fill" style="width:17%;background:#1772d0"></span></span></td><td class="num">368</td><td class="sub">17 books</td></tr>
+<tr><td class="lbl">Society<br><span class="cn">社会</span></td><td class="bar"><span class="track"><span class="fill" style="width:12%;background:#1772d0"></span></span></td><td class="num">258</td><td class="sub">10 books</td></tr>
+<tr><td class="lbl">Design<br><span class="cn">设计</span></td><td class="bar"><span class="track"><span class="fill" style="width:10%;background:#1772d0"></span></span></td><td class="num">225</td><td class="sub">5 books</td></tr>
+<tr><td class="lbl">Medicine<br><span class="cn">医学</span></td><td class="bar"><span class="track"><span class="fill" style="width:1%;background:#1772d0"></span></span></td><td class="num">31</td><td class="sub">1 books</td></tr>
+</table>
+
+<h3>按形式 · By format</h3>
+<table class="bars">
+<tr><td class="lbl">E-books<br><span class="cn">电子书</span></td><td class="bar"><span class="track"><span class="fill" style="width:100%;background:#5aa469"></span></span></td><td class="num">3,022</td><td class="sub"></td></tr>
+<tr><td class="lbl">Courses<br><span class="cn">课程</span></td><td class="bar"><span class="track"><span class="fill" style="width:53%;background:#5aa469"></span></span></td><td class="num">1,612</td><td class="sub"></td></tr>
+<tr><td class="lbl">Audiobooks<br><span class="cn">听书</span></td><td class="bar"><span class="track"><span class="fill" style="width:10%;background:#5aa469"></span></span></td><td class="num">296</td><td class="sub"></td></tr>
+<tr><td class="lbl">Other<br><span class="cn">其他</span></td><td class="bar"><span class="track"><span class="fill" style="width:1%;background:#5aa469"></span></span></td><td class="num">26</td><td class="sub"></td></tr>
+</table>
+
+<h3>笔记最多的 10 本 · Most annotated</h3>
+<table class="bars">
+<tr><td class="lbl">Elon Musk (Ashlee Vance)<br><span class="cn">硅谷钢铁侠</span></td><td class="bar"><span class="track"><span class="fill" style="width:100%;background:#c77d2e"></span></span></td><td class="num">306</td><td class="sub"></td></tr>
+<tr><td class="lbl">The Wave Makers (on Silicon Valley founders)<br><span class="cn">造浪者</span></td><td class="bar"><span class="track"><span class="fill" style="width:100%;background:#c77d2e"></span></span></td><td class="num">305</td><td class="sub"></td></tr>
+<tr><td class="lbl">Zheng Lu: Social Networks<br><span class="cn">郑路的社会网络课</span></td><td class="bar"><span class="track"><span class="fill" style="width:91%;background:#c77d2e"></span></span></td><td class="num">278</td><td class="sub"></td></tr>
+<tr><td class="lbl">The Almanack of Naval Ravikant<br><span class="cn">纳瓦尔宝典</span></td><td class="bar"><span class="track"><span class="fill" style="width:77%;background:#c77d2e"></span></span></td><td class="num">237</td><td class="sub"></td></tr>
+<tr><td class="lbl">Low-Risk Entrepreneurship (Fan Deng)<br><span class="cn">低风险创业</span></td><td class="bar"><span class="track"><span class="fill" style="width:74%;background:#c77d2e"></span></span></td><td class="num">226</td><td class="sub"></td></tr>
+<tr><td class="lbl">Zhang Jiang: Frontiers of Complexity Science<br><span class="cn">张江·复杂科学前沿27讲</span></td><td class="bar"><span class="track"><span class="fill" style="width:73%;background:#c77d2e"></span></span></td><td class="num">222</td><td class="sub"></td></tr>
+<tr><td class="lbl">Secrets of the Millionaire Mind (T. Harv Eker)<br><span class="cn">有钱人和你想的不一样</span></td><td class="bar"><span class="track"><span class="fill" style="width:62%;background:#c77d2e"></span></span></td><td class="num">189</td><td class="sub"></td></tr>
+<tr><td class="lbl">Limitless (Jim Kwik)<br><span class="cn">无限可能</span></td><td class="bar"><span class="track"><span class="fill" style="width:58%;background:#c77d2e"></span></span></td><td class="num">176</td><td class="sub"></td></tr>
+<tr><td class="lbl">Liang Ning: Growth Thinking<br><span class="cn">梁宁·增长思维30讲</span></td><td class="bar"><span class="track"><span class="fill" style="width:49%;background:#c77d2e"></span></span></td><td class="num">150</td><td class="sub"></td></tr>
+<tr><td class="lbl">Frontier Course: Quantum Computing<br><span class="cn">前沿课·量子计算</span></td><td class="bar"><span class="track"><span class="fill" style="width:37%;background:#c77d2e"></span></span></td><td class="num">113</td><td class="sub"></td></tr>
+</table>
+
+<h3>划过的句子 · Lines I marked</h3>
+
+<div class="quote"><p>优秀的创业者不是敢于冒风险的人，而是善于控制风险的人。<br><span class="en">Good founders are not the ones who dare to take risks. They are the ones who control risk well.</span></p><div class="src">— Low-Risk Entrepreneurship《低风险创业》</div></div>
+
+<div class="quote"><p>比起节点自身的特征或属性，节点之间的关系对节点的影响更大。<br><span class="en">A node is shaped more by its links to other nodes than by its own features.</span></p><div class="src">— Zheng Lu: Social Networks《郑路的社会网络课》</div></div>
+
+<div class="quote"><p>追求财富，而不是金钱或地位。财富是指在你睡觉时仍能为你赚钱的资产。<br><span class="en">Seek wealth, not money or status. Wealth is an asset that earns for you while you sleep.</span></p><div class="src">— The Almanack of Naval Ravikant《纳瓦尔宝典》</div></div>
+
+<div class="quote"><p>每多一个视角观察世界，我们理解世界的方式都会发生一些变化。<br><span class="en">Each new angle on the world changes, a little, the way we understand it.</span></p><div class="src">— Zhang Jiang: Frontiers of Complexity Science《张江·复杂科学前沿27讲》</div></div>
+
+<div class="quote"><p>天才与庸才往往并不是像冰与火一样处于对立面。当它们淋漓尽致地集中展现在一个人身上时，我们才发现，原来他就是一个普通人。<br><span class="en">Genius and mediocrity are not opposites like ice and fire. When both show fully in one person, we see that he is an ordinary person after all.</span></p><div class="src">— The Wave Makers《造浪者》</div></div>
+
+<div class="quote"><p>增长就是作判断的能力。判断正确，就增长；判断错误，就损失。这是需要持续一生的练习。<br><span class="en">Growth is the ability to judge. Judge right, and you grow. Judge wrong, and you lose. It takes a lifetime of practice.</span></p><div class="src">— Liang Ning: Growth Thinking《梁宁·增长思维30讲》</div></div>
+
+<div class="quote"><p>系统思考不是割裂地、局部地、静态地看待问题，而是关联地、整体地、动态地审视问题。<br><span class="en">Systems thinking does not see a problem as separate, partial, and still. It sees it as connected, whole, and moving.</span></p><div class="src">— Thinking in Systems《系统之美》</div></div>
+
+<div class="quote"><p>有限游戏的所有限制都是自我限制。我们屏蔽的，是离开赛场的自由。<br><span class="en">Every limit in a finite game is self-imposed. What we give up is the freedom to leave the field.</span></p><div class="src">— Finite and Infinite Games《有限与无限的游戏》</div></div>
+
+<div class="quote"><p>压力，往往来自对过去的检讨和对未来的忧思。<br><span class="en">Stress often comes from reviewing the past and worrying about the future.</span></p><div class="src">— The Mindful Rest Method《高效休息法》</div></div>
+
+<div class="quote"><p>检查推导过程，没有错误。因此，要么是数学错了，要么是认知错了。<br><span class="en">We check the derivation and find no error. So either the math is wrong, or our understanding is.</span></p><div class="src">— Wu Jun: Math for Everyone《吴军·数学通识50讲》</div></div>
