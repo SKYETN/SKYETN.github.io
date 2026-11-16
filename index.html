@@ -46,6 +46,9 @@
                   Cornell Medicine and to West China Hospital, where I was advised by
                   Prof. <a href="https://wangchongyang.ai/">Chongyang Wang</a>.
                 </p>
+                <p>
+                  Some things I've come to believe: <a href="#lessons">Lessons So Far</a>.
+                </p>
                 <p style="text-align:center">
                   <a href="mailto:shiqin.tong@outlook.com">Email</a> &nbsp;/&nbsp;
                   <!-- CV hidden until the PDF is ready: <a href="data/CV.pdf">CV</a> &nbsp;/&nbsp; -->
@@ -318,114 +321,143 @@
 
           <div style="height:34px;"></div>
 
-          <!-- =================== BEYOND THE CV =================== -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- =================== LESSONS SO FAR (notes + reading + tools + hobby) =================== -->
+          <table id="lessons" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr><td style="padding:16px;width:100%;vertical-align:middle">
-              <h2>Beyond the CV</h2>
-              <p>
-                Books I read, the agent-powered note systems I've built, and side projects that speed up my
-                research. <span class="highlight">Most of all, I'm grateful to every PhD student who has mentored me: more than the
-                papers, it's these everyday habits that they really taught me.</span>
-              </p>
+              <h2>Lessons So Far</h2>
+              <p>What I've picked up outside of papers: how I think and work, the books I read, the tools I've built, and what I do away from the desk.</p>
             </td></tr>
           </tbody></table>
           <div class="pubtabs"
-            ><a href="#" id="rflt-all" class="pubtab readtab" onclick="filterRead('all');return false;">All</a
-            ><a href="#" id="rflt-reading" class="pubtab readtab" onclick="filterRead('reading');return false;">Reading</a
-            ><a href="#" id="rflt-workflow" class="pubtab readtab active" onclick="filterRead('workflow');return false;">Note systems</a
-            ><a href="#" id="rflt-projects" class="pubtab readtab" onclick="filterRead('projects');return false;">Projects</a
+            ><a href="#" id="rflt-notes" class="pubtab readtab active" onclick="filterRead('notes');return false;">Lessons So Far</a
+            ><a href="#" id="rflt-tools" class="pubtab readtab" onclick="filterRead('tools');return false;">Tools I Built</a
+            ><a href="#" id="rflt-hobby" class="pubtab readtab" onclick="filterRead('hobby');return false;">Hobby</a
           ></div>
           <div class="pubframe">
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <!-- ---- reading: a data snapshot rather than a book list ---- -->
-            <tr class="read" data-line="reading">
-              <td colspan="2" style="padding:2px 16px 8px;width:100%;vertical-align:middle">
-                <p style="margin:0 0 8px;">
-                  Roughly <strong>4,956 notes</strong> (as of January 2026) and <strong>50k+ words</strong> across <strong>140+ books</strong>,
-                  mostly read over holidays, spanning systems thinking, cognitive science, and philosophy. The ones I annotated most:
-                </p>
-                <table style="width:100%;max-width:580px;border-spacing:0 8px;border-collapse:separate;margin-top:2px;">
-                  <tr>
-                    <td style="width:240px;white-space:nowrap;padding-right:14px;vertical-align:middle;"><strong>Sensemaking</strong> <span style="color:#888;font-size:13px;">Madsbjerg</span></td>
-                    <td style="vertical-align:middle;"><span style="display:block;background:#eef0f2;border-radius:6px;"><span style="display:block;height:12px;width:100%;background:#1772d0;border-radius:6px;"></span></span></td>
-                    <td style="width:1%;text-align:right;color:#555;white-space:nowrap;padding-left:12px;vertical-align:middle;">53</td>
-                  </tr>
-                  <tr>
-                    <td style="white-space:nowrap;padding-right:14px;vertical-align:middle;"><strong>The 7 Habits</strong> <span style="color:#888;font-size:13px;">Covey</span></td>
-                    <td style="vertical-align:middle;"><span style="display:block;background:#eef0f2;border-radius:6px;"><span style="display:block;height:12px;width:66%;background:#1772d0;border-radius:6px;"></span></span></td>
-                    <td style="text-align:right;color:#555;white-space:nowrap;padding-left:12px;vertical-align:middle;">35</td>
-                  </tr>
-                  <tr>
-                    <td style="white-space:nowrap;padding-right:14px;vertical-align:middle;"><strong>Intuition</strong> <span style="color:#888;font-size:13px;">Myers</span></td>
-                    <td style="vertical-align:middle;"><span style="display:block;background:#eef0f2;border-radius:6px;"><span style="display:block;height:12px;width:64%;background:#1772d0;border-radius:6px;"></span></span></td>
-                    <td style="text-align:right;color:#555;white-space:nowrap;padding-left:12px;vertical-align:middle;">34</td>
-                  </tr>
-                  <tr>
-                    <td style="white-space:nowrap;padding-right:14px;vertical-align:middle;"><strong>Finite &amp; Infinite Games</strong> <span style="color:#888;font-size:13px;">Carse</span></td>
-                    <td style="vertical-align:middle;"><span style="display:block;background:#eef0f2;border-radius:6px;"><span style="display:block;height:12px;width:60%;background:#1772d0;border-radius:6px;"></span></span></td>
-                    <td style="text-align:right;color:#555;white-space:nowrap;padding-left:12px;vertical-align:middle;">32</td>
-                  </tr>
-                  <tr>
-                    <td style="white-space:nowrap;padding-right:14px;vertical-align:middle;"><strong>Thinking in Systems</strong> <span style="color:#888;font-size:13px;">Meadows</span></td>
-                    <td style="vertical-align:middle;"><span style="display:block;background:#eef0f2;border-radius:6px;"><span style="display:block;height:12px;width:58%;background:#1772d0;border-radius:6px;"></span></span></td>
-                    <td style="text-align:right;color:#555;white-space:nowrap;padding-left:12px;vertical-align:middle;">31</td>
-                  </tr>
-                </table>
+            <!-- ---- notes (essays) ---- -->
+            <tr class="read" data-line="notes">
+              <td colspan="2" style="padding:8px 16px 0;width:100%;vertical-align:middle">
+                <p style="margin:0;color:#555;">Not conclusions, just what I've learned so far.</p>
+              </td>
+            </tr>
+            <tr class="read" data-line="notes">
+              <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                <a href="lessons/math.html"><span class="papertitle">Math and Fundamentals</span></a>
+                <br>
+                <em>Why I stopped fearing math, and why I went back to the basics.</em>
+              </td>
+            </tr>
+            <tr class="read" data-line="notes">
+              <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                <a href="lessons/brain.html"><span class="papertitle">Brain Load and Recovery</span></a>
+                <br>
+                <em>A late-night headache taught me to stop when my brain is tired.</em>
+              </td>
+            </tr>
+            <tr class="read" data-line="notes">
+              <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                <a href="lessons/system.html"><span class="papertitle">Redesigning My System</span></a>
+                <br>
+                <em>Treating daily work like a training run, with Obsidian as the log.</em>
+              </td>
+            </tr>
+            <!-- not published yet
+            <tr class="read" data-line="notes">
+              <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                <span class="papertitle">Practicing ASD-STE100</span>
+                <br>
+                <em>TODO: one-line summary · link</em>
+              </td>
+            </tr>
+            -->
+            <!-- not published yet
+            <tr class="read" data-line="notes">
+              <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                <span class="papertitle">Biographies</span>
+                <br>
+                <em>TODO: one-line summary · link</em>
+              </td>
+            </tr>
+            -->
+            <tr class="read" data-line="notes">
+              <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                <a href="lessons/reading.html"><span class="papertitle">Reading</span></a>
+                <br>
+                <em><strong>140+ books</strong> &middot; <strong>4,956 notes</strong> &middot; <strong>50k+ words</strong></em>
+              </td>
+            </tr>
+            <tr class="read" data-line="notes">
+              <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                <span class="papertitle">Statistics</span>
+                <br>
+                <em>SPSS &middot; <a href="data/caregivers-poster.pdf">poster (PDF)</a></em>
+                <p style="margin:6px 0 0;">Working with pure mathematicians, I found that when an LLM has no obvious signal to follow, the people with real insight can quickly point me to the one we should supervise.</p>
               </td>
             </tr>
 
-            <!-- ---- workflow ---- -->
-            <tr class="read" data-line="workflow">
+
+            <!-- ---- tools I built (note systems + projects) ---- -->
+            <tr class="read" data-line="tools">
+              <td colspan="2" style="padding:8px 16px 0;width:100%;vertical-align:middle">
+                <p style="margin:0;"><span class="highlight">Most of all, I'm grateful to every PhD student who has mentored me: more than the
+                papers, it's these everyday habits that they really taught me.</span></p>
+              </td>
+            </tr>
+            <tr class="read" data-line="tools">
               <td align="center" style="padding:16px;width:20%;vertical-align:middle">
                 <img src="images/obsidian_graph.png" alt="My Obsidian knowledge graph" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">Obsidian knowledge graph (collection)</span>
                 <br>
-                <em>personal wiki</em>
+                <em>built with Obsidian</em>
                 <p></p>
                 <p>A vault of atomic Zettelkasten notes linked into a graph I actually think in: every idea is one card, wired to its neighbors.</p>
               </td>
             </tr>
 
-            <tr class="read" data-line="workflow">
+            <tr class="read" data-line="tools">
               <td align="center" style="padding:16px;width:20%;vertical-align:middle">
                 <img src="images/n8n_graph.png" alt="n8n paper graph" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">Self-growing note tree (integrate and discover)</span>
-                &nbsp;&middot;&nbsp; <span style="color:#555;">built on <a href="https://n8n.io/">n8n</a></span>
                 <br>
-                <em>automation</em>
+                <em>built with <a href="https://n8n.io/">n8n</a></em>
                 <p></p>
                 <p>An n8n pipeline that grows the vault on its own and scores how important each note is. A write-up about it drew 400+ comments.</p>
               </td>
             </tr>
 
-            <!-- ---- projects (TODO: fill in / swap placeholders for real renders & plots) ---- -->
-            <tr class="read" data-line="projects">
+            <!-- (TODO: swap placeholders for real renders & plots) -->
+            <tr class="read" data-line="tools">
               <td align="center" style="padding:16px;width:20%;vertical-align:middle">
                 <img src="images/blender_scene.png" alt="Blender scene imported into a simulator" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">Blender2sim Loader</span>
                 <br>
-                <em>3D &middot; side project</em>
+                <em>built with Blender</em>
                 <p></p>
                 <p>A loader that pulls scenes from Blender into simulators and composes them on the fly, one-click generating whatever scene I need, with agents assembling the pieces.</p>
               </td>
             </tr>
 
-            <tr class="read" data-line="projects">
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-                <a href="data/caregivers-poster.pdf"><img src="images/spss_poster.png" alt="Caregivers dataset poster" width="100%" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;"></a>
+            <!-- ---- hobby (text only) ---- -->
+            <tr class="read" data-line="hobby">
+              <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                <span class="papertitle">Figure Skating</span>
+                <p>Favorite skater: Yuzuru Hanyu. I can skate a basic short program, and jumps are my favorite part.
+                I learned them the plain way, falling and getting up until the take-off turned into a reflex with no hesitation.</p>
               </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">Statistics</span> &nbsp;&middot;&nbsp; <em>SPSS</em>
-                <br>
-                <a href="data/caregivers-poster.pdf">poster (PDF)</a>
-                <p style="margin:6px 0 0;">Working with pure mathematicians, I found that when an LLM has no obvious signal to follow, the people with real insight can quickly point me to the one we should supervise.</p>
+            </tr>
+
+            <tr class="read" data-line="hobby">
+              <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                <span class="papertitle">Piano</span>
+                <p>I love pop songs arranged from classical music: pop written with classical methods. I also arrange music myself.</p>
               </td>
             </tr>
 
@@ -466,9 +498,10 @@
       function filterExp(line)  { filterRows(line, 'tr.exp', '.exptab', 'eflt-'); }
       function filterRead(line) { filterRows(line, 'tr.read', '.readtab', 'rflt-'); }
 
-      // default tab states on first load: Research=All, Industry=All (certs hidden), Beyond=Workflow
+      // default tab states on first load: all sections show All (certs hidden)
+      filterPubs('all');
       filterExp('all');
-      filterRead('workflow');
+      filterRead('notes');
     </script>
   </body>
 </html>
